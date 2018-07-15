@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 	<style>
 	body {
 		background-color: black;
 		margin: 0px;
 	}
+	* {
+    box-sizing: border-box;
+    }
     p {
     	word-wrap: break-word;
     }
@@ -18,19 +21,21 @@
 		align-items: center;
         justify-content: center;
         position: relative;
+        width: 100%;
 	}
 	aside {
 		position: relative;
 		display: flex;
 		flex-direction: column;
-		size: cover!important;
+		justify-content: flex-end;
 		float: right;
-		margin-right: 30px;
+		size: cover!important;
 		margin-top: 0px;
-		margin-left: 100px;
-		min-width: 100px;
+		margin-left: 50px;
+		width: 25%;
 	}
 	main {
+		margin-right: 20px;
 		position: static;
 		display: flex;
 		flex-wrap: wrap;
@@ -41,7 +46,7 @@
 		border-style: solid;
         border-width: 5px;
         border-color: white;
-        min-width: 400px;
+        width: 65%;
 	}
 	.positioning {
 		color: blue;
