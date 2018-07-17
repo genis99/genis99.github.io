@@ -6,11 +6,13 @@
 	<style>
 	* {
         box-sizing: border-box;
-    }	
+    }
 	body {
 		background-color: black;
-		margin: 0px;
+		margin: 0;
 		size: cover !important;
+		width: 100%;
+		min-width: 800px;
 	}
     p {
     	word-wrap: break-word;
@@ -33,15 +35,12 @@
 	iframe {
 		margin-top: 10px;
 		width: 100%;
+		display: block;
 	}
 	a {
 		max-height: 300px;
 	}
 	main {
-		position: static;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
 		margin-top: 40px;
 		margin-left: 50px;
 		border-style: solid;
@@ -86,9 +85,6 @@
     }
     @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    body {
-    	justify-content: center;
-    }
     [class*="col-"] {
         width: 100%;
     }
