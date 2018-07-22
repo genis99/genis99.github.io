@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="normal.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>SMITE</title>
 	<script>
 	var rvisible = true;
 	var bvisible = false;
@@ -28,6 +32,39 @@
         	gvisible = false;
         }
     }
+    function myfunction1() {
+    	document.getElementById("red").style.opacity = '1';
+        document.getElementById("blue").style.opacity = '0';
+        document.getElementById("green").style.opacity = '0';
+    	rvisible = true;
+	    bvisible = false;
+	    visible = false;
+    }
+    function myfunction2() {
+    	document.getElementById("red").style.opacity = '0';
+        document.getElementById("blue").style.opacity = '1';
+        document.getElementById("green").style.opacity = '0';
+    	rvisible = false;
+	    bvisible = true;
+	    gvisible = false;        
+    }
+    function myfunction3() {
+    	document.getElementById("red").style.opacity = '0';
+        document.getElementById("blue").style.opacity = '0';
+        document.getElementById("green").style.opacity = '1';
+        rvisible = false;
+	    bvisible = false;
+	    gvisible = true;        
+    }
+    function myFunction1() {
+    	myfunction1(); clearTimeout(myVar); myVar = setInterval(myTimer, 4000);
+    }
+    function myFunction2() {
+    	myfunction2(); clearTimeout(myVar); myVar = setInterval(myTimer, 4000); 
+    }
+    function myFunction3() {
+    	myfunction3(); clearTimeout(myVar); myVar = setInterval(myTimer, 4000);
+    }
     </script>
 	<style>
 	* {
@@ -51,6 +88,22 @@
         position: relative;
         width: 100%;
         height: 100%;
+	}
+	nav {
+		padding-left: 20px;
+		padding-right: 20px;
+		background: rgba(27, 170, 178, 0.9);
+		height: 50px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	nav > div {
+		padding: 10px;
+	}
+	nav > div:hover {
+		border-radius: 10px;
+		color: rgb(191, 176, 80);
 	}
     .pr {
       position: relative;
@@ -86,13 +139,7 @@
 		margin-top: 30px;
 		width: 100%;
 		display: block;
-		min-height: 300px;
-	}
-	main {
-		margin-top: 40px;
-		border-style: solid;
-        border-width: 5px;
-        border-color: white;
+		min-height: 200px;
 	}
 	.positioning {
 		color: blue;
@@ -126,19 +173,30 @@
         float: left;
         padding: 15px;
     }
+    #bttn {
+    	display: flex;
+    	justify-content: center;
+    }
+    button {
+    	position: relative;
+    	width: 22px;
+    	height: 22px;
+    	border-radius: 100px;
+    	margin: 20px;
+    	background-color: rgba(27, 170, 178, 0.9);
+    }
     @media only screen and (max-width: 768px) {
     /* For mobile phones: */
     article {
     	display: none;
     }
     .opac {
-    	height: 200px;
+    	height: 150px;
     }
     [class*="col-"] {
         width: 100%;
     }
 }
-	<title>SMITE</title>
     </style>
 </head>
 <body>
@@ -148,19 +206,42 @@
 	    </div>
 	    <div class="gradient"></div>
     </header>
+    <nav>
+    	<div>
+    		Twitter
+    	</div>
+    	<div>
+    		Youtube
+    	</div>
+    	<div>
+    		Facebook
+    	</div>
+    	<div>
+    		SPL
+    	</div>    	
+    	<div>
+    		Get Started
+    	</div>
+    </nav>
     <div class="row">
-        <main class="col-9">
-    	    <h2 class="positioning"> STANDINGS </h2>
+        <main class="col-10">
         <div class="pr">
           <div class="opac">
             <img id="red" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/07/BlogPreviewHeader-PatchBadge-5pt13-UpdateNotes-2560x695-1.jpg" alt="patch_13">
             <img id="blue" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-Badge-5pt12-UpdateNotes-2560x695-1.jpg" alt="blue">
             <img id="green" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-PatchBadge511-UpdateNotes-2560x695.jpg" alt="green">
           </div>
+          <div id="bttn">
+          	<button type="button" onclick="myFunction1()" ></button>
+          	<button type="button" onclick="myFunction2()" ></button>
+          	<button type="button" onclick="myFunction3()" ></button>
+          </div>
         </div>
+        <h2 class="positioning"> STANDINGS </h2>
         </main>
-        <article class="col-3">
-            <a class="twitter-timeline" href="https://twitter.com/SMITEGameES?ref_src=twsrc%5Etfw" height="350px" width="100%">Tweets by SMITEGameES</a>
+    </div>
+        <article class="col-2">
+            <a class="twitter-timeline" href="https://twitter.com/SMITEGameES?ref_src=twsrc%5Etfw" height="250px" width="100%">Tweets by SMITEGameES</a>
             <br>
             <iframe width="100%" height="80%" src="https://www.youtube.com/embed/oIo8re3Io8g" frameborder="0" allow="autoplay; encrypted-media " allowfullscreen>
             </iframe>
