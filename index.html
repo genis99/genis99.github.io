@@ -135,10 +135,13 @@
         position: absolute;
         opacity: 0;
 	}
+	article {
+		display: block;
+	}
 	iframe {
 		margin-top: 30px;
 		width: 100%;
-		display: block;
+		display: flex;
 		min-height: 200px;
 	}
 	.positioning {
@@ -206,7 +209,7 @@
 	    </div>
 	    <div class="gradient"></div>
     </header>
-    <nav>
+    <nav class="col-12">
     	<div>
     		Twitter
     	</div>
@@ -232,14 +235,13 @@
             <img id="green" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-PatchBadge511-UpdateNotes-2560x695.jpg" alt="green">
           </div>
           <div id="bttn">
-          	<button type="button" onclick="myFunction1()" ></button>
-          	<button type="button" onclick="myFunction2()" ></button>
-          	<button type="button" onclick="myFunction3()" ></button>
+          	<button type="button" onclick="myFunction1()"></button>
+          	<button type="button" onclick="myFunction2()"></button>
+          	<button type="button" onclick="myFunction3()"></button>
           </div>
         </div>
         <h2 class="positioning"> STANDINGS </h2>
         </main>
-    </div>
         <article class="col-2">
             <a class="twitter-timeline" href="https://twitter.com/SMITEGameES?ref_src=twsrc%5Etfw" height="250px" width="100%">Tweets by SMITEGameES</a>
             <br>
