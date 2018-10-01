@@ -118,6 +118,8 @@
     }
     .opac > img {
       height: 100%;
+      position: static;
+      display: flex;
       transition: opacity 1.5s ease-in-out;
     }
 	#red {
@@ -147,6 +149,7 @@
 	.positioning {
 		color: blue;
 		text-align: center;
+		font-size:5vw;
 	}
 	.gradient {
 		background: linear-gradient(180deg,transparent,#000 75%,#000);
@@ -179,6 +182,10 @@
     #bttn {
     	display: flex;
     	justify-content: center;
+    	width: 100%;
+    }
+    #bttn > button {
+    	font-size:2vw;
     }
     button {
     	position: relative;
@@ -190,16 +197,23 @@
     }
     @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    article {
+     article {
     	display: none;
-    }
-    .opac {
-    	height: 150px;
-    }
-    [class*="col-"] {
+     }
+     .opac {
+    	height: 100px;
+     }
+     [class*="col-"] {
         width: 100%;
+     }
+    #smite {
+    	width: 100%;
+    	height: auto;
     }
-}
+    nav > div {
+    	width: 100%;
+    	font-size:2vw;
+    }
     </style>
 </head>
 <body>
@@ -230,7 +244,7 @@
         <main class="col-10">
         <div class="pr">
           <div class="opac">
-            <img id="red" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/07/BlogPreviewHeader-PatchBadge-5pt13-UpdateNotes-2560x695-1.jpg" alt="patch_13">
+            <img id="red" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/07/BlogPreviewHeader-PatchBadge-5pt13-UpdateNotes-2560x695-1.jpg" height="100%" alt="patch_13">
             <img id="blue" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-Badge-5pt12-UpdateNotes-2560x695-1.jpg" alt="blue">
             <img id="green" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-PatchBadge511-UpdateNotes-2560x695.jpg" alt="green">
           </div>
