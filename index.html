@@ -149,7 +149,7 @@
 	.positioning {
 		color: blue;
 		text-align: center;
-		font-size:5vw;
+		font-size:3vw;
 	}
 	.gradient {
 		background: linear-gradient(180deg,transparent,#000 75%,#000);
@@ -195,20 +195,32 @@
     	margin: 20px;
     	background-color: rgba(27, 170, 178, 0.9);
     }
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1237px) {
     /* For mobile phones: */
-     article {
-    	display: none;
-     }
-     .opac {
-    	height: 100px;
-     }
-     [class*="col-"] {
-        width: 100%;
-     }
-    #smite {
-    	width: 100%;
-    	height: auto;
+    	article {
+    		display: none;
+    	}
+    	.twitterr {
+     		min-width: 0px;
+     		min-height: 0px;
+     		width: 100%;
+     		height: auto;
+    	}
+    	.opac {
+    		height: 200px;
+    	}
+    	[class*="col-"] {
+        	width: 100%;
+    	}
+    	#smite {
+    		width: 100%;
+    		height: auto;
+    	}
+    }
+    @media only screen and (max-width: 700px) {
+    	.opac {
+    		height: 100px;
+    	}
     }
     nav > div {
     	width: 100%;
@@ -257,7 +269,7 @@
         <h2 class="positioning"> STANDINGS </h2>
         </main>
         <article class="col-2">
-            <a class="twitter-timeline" href="https://twitter.com/SMITEGameES?ref_src=twsrc%5Etfw" height="250px" width="100%">Tweets by SMITEGameES</a>
+            <a class="twitter-timeline twitterr" href="https://twitter.com/SMITEGameES?ref_src=twsrc%5Etfw" width="100%" height="40%">Tweets by SMITEGameES</a>
             <br>
             <iframe width="100%" height="80%" src="https://www.youtube.com/embed/oIo8re3Io8g" frameborder="0" allow="autoplay; encrypted-media " allowfullscreen>
             </iframe>
