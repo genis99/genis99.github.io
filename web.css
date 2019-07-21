@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+body {
+	background-color: black;
+	margin: 0;
+	width: 100%;
+}
+p {
+	word-wrap: break-word;
+}
+header {
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: url(https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/MedusaDeathmatch_bloghead.png);
+	display: flex;
+	justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+nav {
+	background: rgba(97, 97, 97, 0.9);
+	height: 4vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav > a {
+	color: black;
+	margin: 0 5%;
+	font-size: 160%;
+	text-decoration: none;
+}
+nav > a:hover {
+	border-radius: 10px;
+	color: rgb(191, 176, 80);
+}
+
+.pr {
+	margin: 0;
+	position: relative;
+	width: 100%;
+}
+.opac {
+	size: cover!important;
+	width: 100%;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+}
+.opac > img {
+  height: 100%;
+  position: static;
+  display: flex;
+  transition: opacity 1.5s ease-in-out;
+}
+#red {
+	width: 100%;
+    position: absolute;
+    opacity: 1;
+}
+#blue {
+	width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+#green {
+	width: 100%;
+    position: absolute;
+    opacity: 0;
+}
+article {
+	display: block;
+}
+iframe {
+	margin: 15px 0;
+	width: 100%;
+	display: flex;
+	min-height: 230px; !important
+}
+.gradient {
+	background: linear-gradient(180deg,transparent,#000 75%,#000);
+	bottom: 0;
+    height: 40%;
+    position: absolute;
+    width: 100%;
+}
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+}
+#bttn {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+button {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	margin: 5%;
+	margin-top: 0%;
+	background-color: rgba(27, 170, 178, 0.9);
+}
+@media only screen and (max-width: 1237px) {
+/* For mobile phones: */
+	article {
+		display: none;
+	}
+	button {
+		width: 27px;
+		height: 27px;
+	}
+	.twitterr {
+ 		min-width: 0px;
+ 		min-height: 0px;
+ 		width: 100%;
+ 		height: auto;
+	}
+	.opac {
+		height: 200px;
+	}
+	[class*="col-"] {
+    	width: 100%;
+	}
+	#smite {
+		width: 100%;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 700px) {
+/* For mobile phones: */
+	.opac {
+		height: 100px;
+	}
+	button {
+		width: 10px;
+		height: 10px;
+		margin: 3%;
+		padding: 0;
+	}
+}
