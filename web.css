@@ -62,7 +62,7 @@ li > div {
 header {
 	width: 60%;
 	float: left;
-	display: table;
+	display: inline;
 }
 
 div.header {
@@ -85,7 +85,7 @@ header > div > img {
 }
 /* -------------------------------------------------------------------------------------------------- */
 
-hr {
-	margin: 0;
-	height: 4px;
+main {
+	width: 80%;
+	float: left;
 }
