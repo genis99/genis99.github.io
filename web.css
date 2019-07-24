@@ -6,17 +6,20 @@ body {
 /* -------------------------------------------------------------------------------------------------- */
 article {
 	width: 20%;
-	height: 30vw;
 	float: left;
 	display: inline;
+	background-color: black;
 }
 
 article > ul {
-	margin: 0;
-	padding: 4%;
+	margin: 5% 10%;
+	padding: 0;
+	width: 75%;
 	color: white;
 	list-style-type: none;
-	background-color: black;
+	border: 2px solid white;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 article > ul > li:hover {
@@ -26,21 +29,27 @@ article > ul > li:hover {
 
 article > ul > li {
 	padding: 1vw 0;
-	text-align: center;
-	margin: 0 10%;
+	text-align: left;
 	background-color: grey;
 	font-size: 1vw;
+	display: grid;
 }
 
 article > ul > li:not(:last-child) {
 	border-bottom: 2px solid white;
 }
 
+
 li > img {
-	display: flex;
-	justify-content: flex-end;
-	margin-left: 10%;
 	float: left;
+	position: absolute;
+	width: 1vw;
+	margin-top: 0.1vw;
+	margin-left: 1vw;
+}
+
+li > div {
+	margin-left: 3vw;
 }
 /* -------------------------------------------------------------------------------------------------- */
 
