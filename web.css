@@ -2,6 +2,8 @@ body {
 	margin: 0;
 }
 
+/* Article */
+/* -------------------------------------------------------------------------------------------------- */
 article {
 	width: 20%;
 	height: 30vw;
@@ -9,24 +11,60 @@ article {
 	display: inline;
 }
 
-article > div {
-	text-align: center;
-	width: 100%;
+article > ul {
+	margin: 0;
+	padding: 4%;
 	color: white;
+	list-style-type: none;
 	background-color: black;
-	padding: 5% 0;
 }
 
-article > div:hover {
+article > ul > li:hover {
 	color: rgb(191, 176, 80);
+	cursor: pointer;
+}
+
+article > ul > li {
+	padding: 1vw 0;
+	text-align: center;
+	margin: 0 10%;
+	background-color: grey;
+	font-size: 1vw;
+}
+
+article > ul > li:not(:last-child) {
+	border-bottom: 2px solid white;
+}
+
+li > img {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 10%;
 	float: left;
 }
+/* -------------------------------------------------------------------------------------------------- */
 
+
+
+/* Header */
+/* -------------------------------------------------------------------------------------------------- */
 header {
-	text-align: center;
-	vertical-align: middle;
-	padding: 0 20%;
-	background-color: rgb(66, 173, 245);
+	width: 60%;
+	float: left;
+	display: table;
+}
+
+div.header {
+	width: 20%;
+	height: 16vw;
+	float: left;
+	display: inline;
+}
+div#header1 {
+	background-image: linear-gradient(to bottom right, rgb(66, 173, 245), rgb(52, 235, 225));
+}
+div#header2 {
+	background-image: linear-gradient(to top right, rgb(52, 235, 225), rgb(66, 173, 245));
 }
 
 header > img {
@@ -34,6 +72,7 @@ header > img {
 	height: 16vw;
 	display: grid;
 }
+/* -------------------------------------------------------------------------------------------------- */
 
 hr {
 	margin: 0;
