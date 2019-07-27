@@ -17,7 +17,7 @@ article > ul {
 	padding: 0;
 	color: white;
 	list-style-type: none;
-	/*border: 2px solid white;
+	/* border: 2px solid white;
 	border-radius: 10px;
 	overflow: hidden; */
 }
@@ -88,4 +88,4 @@ header > div > img {
 main {
 	width: 80%;
 	float: left;
-}
+}	
