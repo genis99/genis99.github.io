@@ -3,16 +3,16 @@ body {
 	background-color: rgb(29, 40, 82);
 }
 
-/* Article */
+/* nav */
 /* -------------------------------------------------------------------------------------------------- */
-article {
+nav {
 	width: 20%;
 	float: left;
 	display: inline;
 	background-color: black;
 }
 
-article > ul {
+nav > ul {
 	margin: 0;
 	padding: 0;
 	color: white;
@@ -22,20 +22,20 @@ article > ul {
 	overflow: hidden; */
 }
 
-article > ul > li:hover {
+nav > ul > li:hover {
 	color: rgb(191, 176, 80);
 	cursor: pointer;
 }
 
-article > ul > li {
+nav > ul > li {
 	padding: 0.5vw 0;
 	text-align: left;
 	background-color: grey;
-	font-size: 1vw;
+	font-size: 1.2vw;
 	display: grid;
 }
 
-article > ul > li:not(:last-child) {
+nav > ul > li:not(:last-child) {
 	border-bottom: 1px solid white;
 }
 
@@ -50,7 +50,6 @@ li > img {
 
 
 li > div {
-	margin-top: 0.2vw;
 	margin-left: 3vw;
 }
 /* -------------------------------------------------------------------------------------------------- */
@@ -67,7 +66,7 @@ header {
 
 div.header {
 	width: 20%;
-	height: 16vw;
+	height: 12vw;
 	float: left;
 	display: inline;
 }
@@ -80,12 +79,35 @@ div#header2 {
 
 header > div > img {
 	width: 100%;
-	height: 16vw;
+	height: 12vw;
 	display: grid;
 }
 /* -------------------------------------------------------------------------------------------------- */
 
+/* Main */
+/* -------------------------------------------------------------------------------------------------- */
 main {
-	width: 80%;
+	width: 60%;
 	float: left;
-}	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+main > div {
+	border: 2px solid white;
+	font-size: 1vw;
+	padding: 1vw;
+	margin: 7% 6% 0 6%;
+	width: 18vw;
+	height: 10vw;
+	align-items: center;
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+content {
+	width: 20%;
+	float: left;
+	display: inline;
+}
