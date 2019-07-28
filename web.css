@@ -31,8 +31,9 @@ nav > ul > li {
 	padding: 0.5vw 0;
 	text-align: left;
 	background-color: grey;
-	font-size: 1.2vw;
+	font-size: 1vw;
 	display: grid;
+	font-family: roboto,sans-serif!important;
 }
 
 nav > ul > li:not(:last-child) {
@@ -92,17 +93,23 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	position: relative;
 }
 
 main > div {
 	border: 2px solid white;
-	font-size: 1vw;
-	padding: 1vw;
-	margin: 7% 6% 0 6%;
-	width: 18vw;
-	height: 10vw;
-	align-items: center;
+	font-size: 2vw;
+	margin: 5% 5% 0 5%;
+	width: 20vw;
+	height: 80%;
+	text-align: center;
+	padding: 6% 2%;
+	color: rgb(191, 176, 80);
+	background: green;
+	border: 1px solid #85784a;
+	box-shadow: 0 0 13px 3px rgba(0,0,0,.75);
 }
+
 
 /* -------------------------------------------------------------------------------------------------- */
 
