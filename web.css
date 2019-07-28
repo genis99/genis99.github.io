@@ -117,9 +117,15 @@ content {
 	width: 20%;
 	float: left;
 	display: inline;
+	margin-top: 2vw;
 }
 
 content > div {
 	text-align: center;
+}
+
+content > div > iframe {
+	width: 90%;
+	height: 10vw;
 }
 /* -------------------------------------------------------------------------------------------------- */
