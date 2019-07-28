@@ -9,7 +9,6 @@ nav {
 	width: 20%;
 	float: left;
 	display: inline;
-	background-color: black;
 }
 
 nav > ul {
@@ -94,13 +93,14 @@ main {
 	flex-wrap: wrap;
 	justify-content: center;
 	position: relative;
+	margin-top: 3%;
 }
 
 main > div {
 	border: 2px solid white;
 	font-size: 2vw;
-	margin: 5% 5% 0 5%;
-	width: 20vw;
+	margin: 0 5% 4% 5%;
+	width: 32%;
 	height: 80%;
 	text-align: center;
 	padding: 6% 2%;
@@ -117,19 +117,31 @@ content {
 	width: 20%;
 	float: left;
 	display: inline;
-	margin-top: 2vw;
+	margin-top: 0.5%;
 }
 
 content > div {
 	text-align: center;
+	margin-bottom: 2%;
 }
 
 content > div > img {
 	width: 60%;
 }
 
+content > div > div#patch {
+	display: inline-block;     /*interessant*/
+	width: 90%;
+	height: 10vw;
+    border: 2px solid #e9d691;
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.75);
+}
+
 content > div > iframe {
 	width: 90%;
 	height: 10vw;
+    border: 2px solid #e9d691;
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.75);
+    z-index: 10;
 }
 /* -------------------------------------------------------------------------------------------------- */
