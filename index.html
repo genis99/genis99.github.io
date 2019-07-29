@@ -19,19 +19,19 @@
 	<nav>
 		<ul>
 			<li>
-				<div>Inicio</div>
+				<div id="active" onclick="nav_function(this)">Inicio</div>
 			</li>
 			<li>
-				<div>Ligas</div>
+				<div id="" onclick="nav_function(this)">Ligas</div>
 			</li>
 			<li>
-				<div>Conocimiento del juego</div>
+				<div id="" onclick="nav_function(this)">Conocimiento del juego</div>
 			</li>
 			<li>
-				<div>--------</div>
+				<div id="" onclick="nav_function(this)">--------</div>
 			</li>
 			<li>
-				<div>FAQ</div>
+				<div id="" onclick="nav_function(this)">FAQ</div>
 			</li>
 		</ul>
 	</nav>
@@ -43,11 +43,25 @@
 	</main>
 	<content>
 		<div>
-			
+			<img id="patchimg" src="img/patch.png" alt="patch_notes">
 			<div id="patch">
-				<img src="img/patch.png" alt="patch_notes">
+				
+				<div class="pr">
+					<div class="opac">
+						<img id="red" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/07/BlogPreviewHeader-PatchBadge-5pt13-UpdateNotes-2560x695-1.jpg" height="100%">
+						<img id="blue" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-Badge-5pt12-UpdateNotes-2560x695-1.jpg">
+						<img id="green" src="https://web2.hirez.com/smite-media//wp-content/uploads/2018/06/BlogPreviewHeader-PatchBadge511-UpdateNotes-2560x695.jpg">
+					</div>
+	          <!--<div id="bttn">
+	          	<button type="button" onclick="myFunction1()"></button>
+	          	<button type="button" onclick="myFunction2()"></button>
+	          	<button type="button" onclick="myFunction3()"></button>
+	          </div>-->
+	    		</div>
 			</div>
 		</div>
+
+		
 		<div>
 			<iframe
 			    src="https://player.twitch.tv/?channel=spaincones&muted=true"
