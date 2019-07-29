@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	background-color: white;
+	background-color: #071325;
 }
 
 /* nav */
@@ -96,19 +96,51 @@ main {
 	margin-top: 3%;
 }
 
+
+
 main > div {
 	border: 2px solid white;
 	font-size: 2vw;
 	margin: 0 5% 4% 5%;
-	width: 32%;
-	height: 80%;
-	text-align: center;
-	padding: 6% 2%;
-	color: rgb(191, 176, 80);
-	background: green;
+	text-align: right;
+	color: white;
 	border: 1px solid #85784a;
 	box-shadow: 0 0 13px 3px rgba(0,0,0,.75);
+	cursor: pointer;
+	-webkit-transition: background-size 0.1s ease-in-out; /* For Safari 3.1 to 6.0 */
+	transition: background-size 0.1s ease-in-out;
 }
+
+main > div#a {
+	background: url(img/icono.png) no-repeat center;
+	background-size: 12vw;
+}
+main > div#a:hover {background-size: 15vw; color: rgb(191, 176, 80);}
+
+main > div#b {
+	background: url(img/patch.png) no-repeat center;
+	background-size: 15vw;
+}
+main > div#b:hover {background-size: 17vw; color: rgb(191, 176, 80);}
+
+main > div#c {
+
+}
+main > div#c:hover {background-size: 17vw; color: rgb(191, 176, 80);}
+
+main > div#d {
+
+}
+main > div#d:hover {background-size: 17vw; color: rgb(191, 176, 80);}
+
+main span {
+	width: 22vw;
+	height: 13vw;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+	
 /* -------------------------------------------------------------------------------------------------- */
 
 /* Contingut dret */
@@ -166,19 +198,19 @@ content > div > iframe {
   position: static;
   transition: opacity 0.6s ease-in-out;
 }
-#red {
+#un {
 	width: 120%;
 	height: 10vw;
     position: absolute;
     opacity: 1;
 }
-#blue {
+#dos {
 	width: 120%;
 	height: 10vw;
     position: absolute;
     opacity: 0;
 }
-#green {
+#tres {
 	width: 120%;
 	height: 10vw;
     position: absolute;
